@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+<center>
+    <div class="wrapper">
+        <div class="container">
+            <img class="img" src="./images/mov.png" alt="">
+        </div>
+    </div>
+</center>
+    <div class="container">
+        <nav class="nav">
+            <div class="div__log">
+                <form id="form" class="form">
+                    <input id="input" class="input" type="text" placeholder="Search..." autocomplete="off">
+                    <select id="genreSelect">
+                        <option value="all">All</option>
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Biography">Biography</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Crime">Crime</option>
+                        <option value="Documentary">Documentary</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Family">Family</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="History">History</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Music">Music</option>
+                        <option value="Mystery">Mystery</option>
+             
+                    </select>
+                    
+                    <select class="select" id="select">
+                        <option value="az">A-Z</option>
+                        <option value="za">Z-A</option>
+                    </select>                
+                    <button class="button" id="button">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <ul id="moviesWrapper" class="ota">
+        
+    </ul>
+
+    <script src="./movies.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
